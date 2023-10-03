@@ -1,5 +1,4 @@
 # Webservice Studio Site
-Webservice Studio Site repository for Git tutorial
-This is an example repository for the Git tutoial on https://www.w3schools.com
+Webservice Studio Site repository for GitHub.
+Web adress site: https://www.webservice.studio
 
-This repository is built step by step in the tutorial.

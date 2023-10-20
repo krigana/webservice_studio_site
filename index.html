@@ -32,9 +32,11 @@
    }</script>
 	
     </head>
-	<body>
-		<nav>
+	<body> 
+             
+        <nav>
             <div class="nav-logo">
+               
                 <a href="#">
                     <img src="images/logo.png">
                 </a>
@@ -46,10 +48,10 @@
                 <li id="link2" class="link"><a href="#">Pricing</a></li>
                 <li id="link3" class="link"><a href="#">About</a></li>
             </ul>
-            <button class="btn">Hire Me</button>
+            <button data-modal-target="#modal" class="btn">Hire Me</button>
         </nav>
-    
-        <header class="container">
+   
+        <header class="container">            
             <div class="content">
                 <span class="blur"></span>
                 <span class="blur"></span>
@@ -63,6 +65,9 @@
             <div class="image">
                 <img src="images/header.png">
             </div>
+
+            
+
         </header>
 
         <!-- Features -->
@@ -134,11 +139,11 @@
                     <h3>0$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Smart coding plan
+                        Free Consultation
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        At home workouts
+                        Discussion of technical specifications
                     </p>
                 </div>
                 <button class="btn">Join Now</button>
@@ -149,15 +154,15 @@
                     <h3>50$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Pro codes
+                        Any SDK
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Smart coding plan
+                        Webview Modul
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        At home workouts
+                        Google Play market publish
                     </p>
                 </div>
                 <button class="btn">Join Now</button>
@@ -251,8 +256,8 @@
 
         <!-- Footer -->
         <footer class="container">
-        	<span class="blur"></span>
-        <span class="blur"></span>
+        	<span class="blur-bottom"></span>
+        <span class="blur-bottom"></span>
         <div class="column">
             <div class="logo">
                 <img src="images/logo.png">
@@ -275,14 +280,14 @@
         </div>
         <div class="column">
             <h4>About Us</h4>
-            <a href="#">Blogs</a>
+            <a href="https://web-service.studio/blog/blog.html">Blogs</a>
             <a href="#">Channels</a>
             <a href="#">Sponsors</a>
         </div>
         <div class="column">
             <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privicy Policy</a>
+            <a href="https://web-service.studio/index.html#sec-040f">Contact Us</a>
+            <a href="https://web-service.studio/privacy.html">Privicy Policy</a>
             <a href="#">Terms & Conditions</a>
         </div>
         </footer>
@@ -291,6 +296,18 @@
 		<div class="copyright">
 			Copyright © 2023 Webservice Studio. All Rights Reserved.
 		</div>
+
+        <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">Example Modal</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+            </div>
+          </div>
+          <div id="overlay"></div>
+        
 		<script src="script.js"></script>
 	</body> 
 </html>

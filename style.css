@@ -428,6 +428,7 @@ footer .column > a:hover{
     }
 }
 
+/*Modal Form*/
 .modal {
     position: fixed;
     top: 50%;
@@ -447,7 +448,7 @@ footer .column > a:hover{
   }
   
   .modal-header {
-    padding: 10px 15px;
+    padding: 5px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -455,8 +456,10 @@ footer .column > a:hover{
   }
   
   .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
+    background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .modal-header .close-button {
@@ -466,6 +469,14 @@ footer .column > a:hover{
     background: none;
     font-size: 1.25rem;
     font-weight: bold;
+  }
+
+  .modal-header .close-button:hover{    
+    background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+        
   }
   
   .modal-body {
@@ -482,7 +493,7 @@ footer .column > a:hover{
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
-    
+    z-index: 99;
   }
   
   #overlay.active {
@@ -490,3 +501,61 @@ footer .column > a:hover{
     pointer-events: all;
     
   }
+
+  .modal-form{    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    z-index: 110;
+}
+
+.modal-form .card{
+    padding: 2rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+.modal-form .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.modal-form .card .content{
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.modal-form .card h4{
+    color: #fff;    
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.modal-form .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.modal-form .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.modal-form .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.modal-form .card button:hover{
+    
+    border-color: #ffffff;
+}

@@ -410,13 +410,7 @@ footer .column > a:hover{
     .nav-links{
         display: none;
     }
-
-    .container {
-        
-        margin: auto;
-        padding: 2rem 2rem;
-    
-    }
+   
 
     header .image::before{
         display: none;

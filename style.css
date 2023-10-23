@@ -405,7 +405,7 @@ footer .column > a:hover{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (min-width: 300px){
 
     .nav-links{
         display: none;

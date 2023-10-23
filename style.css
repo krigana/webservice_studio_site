@@ -411,6 +411,10 @@ footer .column > a:hover{
         display: none;
     }
 
+    header{       
+        padding-top: 1rem;        
+    }
+
     header .image::before{
         display: none;
     }

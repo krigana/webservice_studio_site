@@ -411,7 +411,8 @@ footer .column > a:hover{
         display: none;
     }
 
-    header{       
+    header{  
+        height: 100hv;     
         padding-top: 1rem;        
     }
 

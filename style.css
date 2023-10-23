@@ -415,9 +415,13 @@ footer .column > a:hover{
         display: none;
     }
 
-    header .content h1{       
-         font-size: 1rem;
-            
+    header .content h1{
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3rem;
+       
     }
 
     .features{

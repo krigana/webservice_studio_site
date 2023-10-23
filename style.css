@@ -61,8 +61,7 @@ nav{
     height: 2px;
     width: 0;
     bottom: 0;
-    left: 0;
-    background-color: #00A0C7;
+    left: 0;    
     transition: all 0.3s ease;
 }
 
@@ -84,12 +83,14 @@ nav{
 
 .btn:hover{
     background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);    
+    border: 1px solid #fff;
+    
 }
 
 .container{
     max-width: 1200px;
     margin: auto;
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
 
 }
 
@@ -315,9 +316,8 @@ section .header{
     border: 2px solid #fff;
 }
 
-.pricing .card button:hover{
-    background-color: #00A0C7;
-    border-color: #00A0C7;
+.pricing .card button:hover{    
+    border-color: #ffffff;
 }
 
 footer{
@@ -405,14 +405,17 @@ footer .column > a:hover{
     }
 }
 
-@media screen and (max-width: 600px) and (min-width: 300px){
+@media screen and (max-width: 600px) and (min-width: 200px){
 
     .nav-links{
         display: none;
     }
 
-    header{              
-        padding-top: 1rem;        
+    .container {
+        
+        margin: auto;
+        padding: 2rem 2rem;
+    
     }
 
     header .image::before{

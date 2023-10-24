@@ -3,7 +3,8 @@
 
 <head>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -300,7 +301,7 @@
     </div>
 
     <!-- Modal Form-->
-    <div class="modal content" id="modal">
+    <div class="modal " id="modal">
         
         <div class="modal-header">            
         <span class="blur"></span>        
@@ -311,39 +312,58 @@
             <div class="modal-form">                  
               <div class="card"> 
                 <h4>Hire Me</h4>                       
-                <div class="form-content">
-                    <form action="telegram.php" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-9 u-form-vertical u-inner-form" style="padding: 0px;" source="custom" name="form" redirect="true">
-                      <div class="u-form-group u-form-name u-form-partition-factor-2 u-form-group-1">
-                        <label for="name-26da" class="u-form-control-hidden u-label u-text-palette-5-base u-label-1"></label>
-                        <input type="text" placeholder="Введите Ваше имя" id="name-26da" name="name" class="u-input u-input-rectangle u-white" required="">
-                      </div>
-                      <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-2">
-                        <label for="phone-0f63" class="u-form-control-hidden u-label u-text-palette-5-base u-label-2"></label>
-                        <input type="tel" placeholder="Телефон в формате +38(063)0500070" id="phone-0f63" name="phone" class="u-input u-input-rectangle u-white" required="" pattern="(\+?\d[- .]*){7,13}">
-                      </div>
-                      <div class="u-form-group u-form-textarea u-form-group-3">
-                        <label for="textarea-287a" class="u-form-control-hidden u-label u-text-palette-5-base u-label-3"></label>
-                        <textarea rows="4" cols="25" id="textarea-287a" name="textarea" class="u-input u-input-rectangle u-white" required="" placeholder="Ваше повідомлення"></textarea>
-                      </div>
-                      <div class="u-form-agree u-form-group u-form-group-4">
-                        <input type="checkbox" id="agree-c845" name="agree" class="u-agree-checkbox" required="">
-                        <label for="agree-c845" class="u-label u-text-palette-5-base u-label-4">Я приймаю <a href="privacy.html">умови надання послуг</a>
-                        </label>
-                      </div>                      
+                <div class="form">
+                    <form action="#" id="form" class="form_body">                        
+                        <div class="form_item">
+                            <label for="formName" class="form_lable">Name:*</label>
+                            <input id="formName" type="text" name="name" class="form_input _req">
+                        </div>
+    
+                        <div class="form_item">
+                            <label for="formEmail" class="form_lable">Email:*</label>
+                            <input id="formEmail" type="text" name="email" class="form_input _req _email">
+                        </div>
+    
                         
-                                           
-                      <input type="hidden" value="" name="recaptchaResponse">
+                        <div class="form_item">
+                            <label for="formMessage" class="form_lable">Message:</label>
+                            <textarea id="formMessage" name="message" class="form_input"></textarea>
+                        </div>   
+                        
+    
+                        <div class="form_item">
+                            <!--<div class="form_lable">Прикрепить фото:*</div>-->
+                            <div class="file">
+                                <div class="file_item">
+                                    <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+                                    <!--<div class="file_button">Выбрать</div>-->
+                                </div>
+                                <!--<div id="formPreview" class="file_preview"></div>-->
+                            </div>
+    
+                            <div class="form_item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input _req">
+                                <label for="formAgreement" class="checkbox_lable"><span>Я даю свое согласие на обработку персональных данных в соответсвии с <a href="">условиями</a></span></label>
+                            </div>
+                            
+                           </div>
+                        </div>
+    
+                        <button type="submit" class="btn form_button">SEND</button>
                     </form>
+                </div>
                     
                   </div>                
-                  <button class="btn">SEND</button>
+                  
             </div>
           </div>
         </div>
     </div>
     <div id="overlay"></div>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/form_send.js"></script>
 </body>
 
 </html>

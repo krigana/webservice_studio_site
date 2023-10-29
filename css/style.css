@@ -1,12 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;    
+/*Обнуление*/
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
 }
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li{
+	text-decoration: none;
+}
+
+img{
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h530px,h6{
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/*------------------------------*/
 
 img{
     display: flex;
@@ -75,7 +102,7 @@ nav{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;  
-    background-color: #3b82f6;
+    background-color: #1158fe;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -153,10 +180,10 @@ header .image::before{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 38rem;
+    font-size: 43rem;
     font-weight: 400;
     line-height: 20rem;
-    color: #00A0C7;
+    color: #fff;
     opacity: 0.2;
     z-index: -100;
 }
@@ -520,10 +547,10 @@ footer .column > a:hover{
 }
 
 .modal-form .card{
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     background-color: #27272a;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;

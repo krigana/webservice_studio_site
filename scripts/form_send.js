@@ -16,7 +16,7 @@ async function formSend(e){
 	if(error === 0){
 			form.classList.add('_sending');
 			
-		let response = await fetch('sendmail.php', {
+		let response = await fetch('telegram.php', {
                 method: 'POST',
                 body: formData
             });
@@ -43,10 +43,9 @@ function formValidate(form){
 	for(let index=0; index < formReq.length; index++){
 	const input = formReq[index];
 	formRemoveError(input);
-	
-	if(input.classList.contains('_email')){
+	if(input.classList.contains('_phone')){
 		
-		if(emailTest(input)){
+		if(phoneTest(input)){
 			formAddError(input);
 			error++;
 		}
@@ -74,10 +73,17 @@ function formRemoveError(input){
 	input.classList.remove('_error');
 }
 
-//Функция теста email
+/*Функция теста email 1
 function emailTest(input){
 	return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}*/
+
+//Функция теста phone
+function phoneTest(input){
+	return !/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(input.value);
 }
+
+
 
 
 // Получение инпут file в переменную далее для вложенного файла

@@ -28,7 +28,7 @@ h1,
 h2,
 h3,
 h4,
-h530px,h6{
+h5,h6{
 	font-weight: inherit;
 	font-size: inherit;
 }
@@ -54,7 +54,7 @@ nav{
     max-width: 1200px;
     margin: auto;    
     background-color: #18181B; 
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
